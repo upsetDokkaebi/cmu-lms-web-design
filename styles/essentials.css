@@ -6,7 +6,7 @@
 
 body {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-color: #F3F4F6;
     font-family: poppins;
     font-size: 12px;
@@ -17,4 +17,12 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 500px) {
+    .background {
+        background-position: right;
+        backdrop-filter: blur(8px);
+        transition: ease 0.3s;
+    }
 }
