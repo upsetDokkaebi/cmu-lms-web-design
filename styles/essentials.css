@@ -21,7 +21,7 @@ body {
 
 @media (max-width: 500px) {
     .background {
-        background-position: right;
+        background-position: 30% center;
         backdrop-filter: blur(8px);
         transition: ease 0.3s;
     }
