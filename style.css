@@ -155,16 +155,18 @@ input:focus {
 
     .cmu-logo-colored {
         width: 80px;
-        transform: translateY(-120px);
+        transform: translateY(-100px);
     }
 
     .sign-heading {
         font-size: 20px;
-        color: #f0f0f0;
+        /* color: #f0f0f0; */
+        color: #333;
     }
 
     .form-items p.font-poppins-light {
-        color: #e4e4e4;
+        /* color: #e4e4e4; */
+        color: #444;
     }
 
     .submit-container {
