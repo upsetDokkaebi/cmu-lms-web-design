@@ -134,7 +134,7 @@ input:focus {
 @media (max-width: 500px) {
     .login-form {
         justify-content: flex-end;
-        padding-bottom: 80px;
+        padding-bottom: 50px;
     }
 
     .cmu-logo-text-white {
