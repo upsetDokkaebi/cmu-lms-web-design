@@ -54,16 +54,14 @@ body {
 main {
     width: 100%;
     height: calc(100% - 120px);
-    display: flex;
-    /* grid-template-columns: 0.7fr 2.3fr; */
+    display: grid;
+    grid-template-columns: 0.7fr 2.3fr;
 }
 
 .navmenu {
-    width: 23vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: 1.5s;
 }
 
 .navmenu .menuBtn,
@@ -121,18 +119,13 @@ main {
     border-radius: 10px;
 }
 
-.navLabel {
-    opacity: 1;
-    transition: 1.5s;
-}
-
 .navigation li:hover {
     /* outline: 1px solid #333; */
     margin-left: 15px;
     transition: ease 0.4s;
 }
 
-.navLink {
+.navigation li a {
     width: 200px;
     height: auto;
     display: flex;
@@ -141,14 +134,11 @@ main {
     gap: 10px;
     color: #333;
     text-decoration: none;
-    transition: 1.5s;
 }
 
 .container {
-    width: 77vw;
     position: relative;
     padding: 0 30px 30px 0;
-    transition: 1.5s;
 }
 
 .content {
@@ -162,162 +152,27 @@ main {
     box-shadow: 0px 1px 4px 1px rgba(77, 77, 77, 0.15);
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-.content .pinned-courses {
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.pinned-courses .pc-heading {
-    width: 100%;
-    height: max-content;
-    display: flex;
-    justify-content: space-between;
-}
-
-.pc-heading p {
+.content .announcement-heading {
+    margin-bottom: 10px;
     font-size: 1.1rem;
     font-weight: 500;
 }
 
-.pc-heading a {
-    color: #7E8BB6;
-    margin-right: 10px;
-}
-
-.pinned-courses .pc-container {
+.content .ann-item {
     width: 100%;
-    min-height: 100px;
-    /* background-color: #333; */
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-}
-
-.pc-container .course-card {
-    position: relative;
-    width: auto;
-    height: 80px;
-    background-color: #adadad;
+    min-height: 50px;
+    background-color: rgba(255, 0, 0, 0.6);
+    border-radius: 10px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     padding: 10px;
-    border-radius: 20px;
-    gap: 10px;
-    cursor: pointer;
+    color: white;
 }
-
-.course-card img {
-    height: 100%;
-    border-radius: 10px;
-}
-
-.course-card .card-item {
-    height: 100%;
-    margin-top: 5px;
-}
-
-#item-title {
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-wrap: nowrap;
-}
-
-#item-unit {
-    position: absolute;
-    font-size: 0.7rem;
-    bottom: 10px;
-    right: 15px;
-}
-
-.content .to-do {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin-top: 25px;
-}
-
-.to-do .td-heading {
-    font-size: 1.1rem;
-    font-weight: 500;
-}
-
-.to-do .td-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin-top: 15px;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.to-do .td-item {
-    width: 100%;
-    height: auto;
-    min-height: 35px;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    /* border-radius: 10px;
-    background: #FFF;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25) inset; */
-    cursor: pointer;
-    background-color: #f8f8f8;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.td-item span {
-    width: 8px;
-    height: 8px;
-    background: #5297FF;
-    flex-shrink: 0;
-    border-radius: 100%;
-    margin-right: 20px;
-}
-
-.circle {
-    width: 10px;
-    height: 10px;
-    background-color: #3a80f0;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
-.item-content {
-    width: calc(100% - 25px);
-    display: grid;
-    grid-template-columns: 0.5fr 2.5fr 3fr 1.3fr;
-    grid-template-rows: 1fr;
-    gap: 10px;
-    align-items: center;
-}
-
-.item-content p {
-    text-wrap: nowrap;
-}
-
-#td-item-code {
-    text-transform: uppercase;
-    color: #3a80f0;
-}
-
-#td-item-title {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-#td-item-due {
-    text-align: right;
-}
-
-
-
 
 
 
