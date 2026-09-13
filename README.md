@@ -2,6 +2,7 @@
 ![smu-lms-preview](assets/cmu-lms-preview.png)
 
 A static LMS web design concept inspired by the City of Malabon University (CMU) portal experience.
+[View live demo here](https://cmu-lms-static.vercel.app/)
 
 > **Disclaimer:** This project is for visual inspiration and educational design exploration only. It is not an official City of Malabon University system, is not connected to any university service, and is not intended for credited academic, administrative, or production use.
 
@@ -27,7 +28,6 @@ This repository contains a front-end-only mockup of an LMS portal, including a s
 - Local image and font assets
 
 ## Running Locally
-[View live demo](https://cmu-lms-static.vercel.app/)
 
 No build step or package installation is required.
 
